@@ -161,7 +161,14 @@ class SkipBatchSampler(Sampler):
 
 class LMForRewardModel:
     def __init__(self, model_path, device="cuda", dtype=torch.float16):
-        self.tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
+        # InternLM2 ships a custom SentencePiece tokenizer. Newer Transformers
+        # versions may otherwise try the generic Tiktoken fast-tokenizer
+        # conversion path and fail to parse tokenizer.model.
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            model_path,
+            trust_remote_code=True,
+            use_fast=False,
+        )
         self.model = AutoModel.from_pretrained(model_path, torch_dtype=dtype, trust_remote_code=True)
         self.model = self.model.to(device).eval()
         self.device = device
@@ -177,8 +184,6 @@ class LMForRewardModel:
         ]
         score = self.model.get_score(self.tokenizer, eval_messages)
         return max(min(score, 3.0), -3.0)
-
-
 # ===== 数学表达式安全求值：替代 eval，只放行算术运算与 math 白名单（长度上限 512） =====
 def safe_math_eval(expression):
     """对模型生成的数学表达式求值：支持 + - * / // % **、math 白名单函数与 pi/e/tau 常量。"""

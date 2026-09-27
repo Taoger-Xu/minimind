@@ -1,0 +1,378 @@
+W0928 00:06:57.455000 518531 torch/distributed/run.py:792] 
+W0928 00:06:57.455000 518531 torch/distributed/run.py:792] *****************************************
+W0928 00:06:57.455000 518531 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0928 00:06:57.455000 518531 torch/distributed/run.py:792] *****************************************
+swanlab: Tracking run with swanlab version 0.7.11
+swanlab: Run data will be saved locally in 
+/home/jk/work/minimind/trainer/swanlog/run-20260928_000703-bdivuzzpqk51fpkh1dnmm
+swanlab: Backing up run MiniMind-Distill-S768T768-Epoch-1-BS-32-LR-5e-06 locally
+swanlab:  ☁️ Run `swanlab sync 
+/home/jk/work/minimind/trainer/swanlog/run-20260928_000703-bdivuzzpqk51fpkh1dnmm
+` to sync logs to remote server
+Model Params: 63.91M
+Trainable Params: 63.912M
+学生模型总参数量：63.912 M
+Model Params: 63.91M
+Trainable Params: 63.912M
+教师模型总参数量：63.912 M
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 7357 examples [00:00, 50004.69 examples/s]Generating train split: 14681 examples [00:00, 51418.91 examples/s]Generating train split: 22008 examples [00:00, 50678.86 examples/s]Generating train split: 29345 examples [00:00, 49709.28 examples/s]Generating train split: 36681 examples [00:00, 49105.13 examples/s]Generating train split: 44005 examples [00:00, 48293.55 examples/s]Generating train split: 51321 examples [00:01, 47667.40 examples/s]Generating train split: 58665 examples [00:01, 47543.44 examples/s]Generating train split: 65995 examples [00:01, 48063.82 examples/s]Generating train split: 73348 examples [00:01, 48444.14 examples/s]Generating train split: 82043 examples [00:01, 50518.77 examples/s]Generating train split: 96740 examples [00:01, 63861.17 examples/s]Generating train split: 110923 examples [00:01, 73332.34 examples/s]Generating train split: 125097 examples [00:02, 74948.51 examples/s]Generating train split: 139712 examples [00:02, 80926.32 examples/s]Generating train split: 154159 examples [00:02, 84292.29 examples/s]Generating train split: 168226 examples [00:02, 84926.05 examples/s]Generating train split: 178947 examples [00:02, 79434.70 examples/s]Generating train split: 189515 examples [00:02, 76584.40 examples/s]Generating train split: 200137 examples [00:03, 75146.92 examples/s]Generating train split: 210735 examples [00:03, 74383.29 examples/s]Generating train split: 221325 examples [00:03, 73845.11 examples/s]Generating train split: 231958 examples [00:03, 73435.36 examples/s]Generating train split: 242576 examples [00:03, 73183.11 examples/s]Generating train split: 253164 examples [00:03, 72414.67 examples/s]Generating train split: 263762 examples [00:03, 70024.18 examples/s]Generating train split: 274397 examples [00:04, 68742.84 examples/s]Generating train split: 285029 examples [00:04, 69638.47 examples/s]Generating train split: 295644 examples [00:04, 68870.82 examples/s]Generating train split: 306302 examples [00:04, 68930.91 examples/s]Generating train split: 316898 examples [00:04, 68658.56 examples/s]Generating train split: 327498 examples [00:04, 69006.66 examples/s]Generating train split: 338252 examples [00:05, 69213.49 examples/s]Generating train split: 348922 examples [00:05, 68662.48 examples/s]Generating train split: 359559 examples [00:05, 68922.39 examples/s]Generating train split: 370173 examples [00:05, 68706.18 examples/s]Generating train split: 380821 examples [00:05, 69323.19 examples/s]Generating train split: 391547 examples [00:05, 69996.42 examples/s]Generating train split: 402284 examples [00:05, 70618.87 examples/s]Generating train split: 413050 examples [00:06, 69078.03 examples/s]Generating train split: 423663 examples [00:06, 69629.78 examples/s]Generating train split: 434341 examples [00:06, 70331.68 examples/s]Generating train split: 445118 examples [00:06, 70942.39 examples/s]Generating train split: 455847 examples [00:06, 71799.03 examples/s]Generating train split: 466625 examples [00:06, 72058.67 examples/s]Generating train split: 477296 examples [00:07, 72439.07 examples/s]Generating train split: 488001 examples [00:07, 70903.27 examples/s]Generating train split: 498686 examples [00:07, 71257.09 examples/s]Generating train split: 509339 examples [00:07, 71416.81 examples/s]Generating train split: 520059 examples [00:07, 71111.15 examples/s]Generating train split: 530709 examples [00:07, 71697.88 examples/s]Generating train split: 539925 examples [00:07, 67340.71 examples/s]Generating train split: 547894 examples [00:08, 62932.22 examples/s]Generating train split: 554476 examples [00:08, 56611.25 examples/s]Generating train split: 563061 examples [00:08, 57251.68 examples/s]Generating train split: 571655 examples [00:08, 58087.83 examples/s]Generating train split: 580241 examples [00:08, 57477.80 examples/s]Generating train split: 589000 examples [00:08, 57827.38 examples/s]Generating train split: 598729 examples [00:08, 60129.43 examples/s]Generating train split: 608635 examples [00:09, 61898.28 examples/s]Generating train split: 618812 examples [00:09, 62709.45 examples/s]Generating train split: 629376 examples [00:09, 66319.51 examples/s]Generating train split: 639587 examples [00:09, 65871.72 examples/s]Generating train split: 649681 examples [00:09, 62960.08 examples/s]Generating train split: 659933 examples [00:09, 63951.35 examples/s]Generating train split: 670182 examples [00:10, 65314.57 examples/s]Generating train split: 680539 examples [00:10, 65622.38 examples/s]Generating train split: 690828 examples [00:10, 66849.84 examples/s]Generating train split: 701200 examples [00:10, 67225.21 examples/s]Generating train split: 711614 examples [00:10, 67993.97 examples/s]Generating train split: 722117 examples [00:10, 68603.27 examples/s]Generating train split: 732486 examples [00:10, 68836.40 examples/s]Generating train split: 743041 examples [00:11, 68719.55 examples/s]Generating train split: 753534 examples [00:11, 67131.93 examples/s]Generating train split: 763862 examples [00:11, 67129.12 examples/s]Generating train split: 777065 examples [00:11, 73922.46 examples/s]Generating train split: 795437 examples [00:11, 83844.29 examples/s]Generating train split: 813873 examples [00:11, 91370.46 examples/s]Generating train split: 832275 examples [00:12, 96305.21 examples/s]Generating train split: 851333 examples [00:12, 100875.21 examples/s]Generating train split: 871300 examples [00:12, 107157.92 examples/s]Generating train split: 891623 examples [00:12, 113984.27 examples/s]Generating train split: 905718 examples [00:12, 111311.86 examples/s]Generating train split: 905718 examples [00:12, 71068.19 examples/s] 
+torch.compile enabled
+Epoch:[1/1](20/7076), loss: 0.6962, ce: 1.3915, aux_loss: 0.0000, distill: 0.0008, learning_rate: 0.00000500, epoch_time: 239.000min
+Epoch:[1/1](40/7076), loss: 0.6559, ce: 1.3109, aux_loss: 0.0000, distill: 0.0009, learning_rate: 0.00000500, epoch_time: 132.000min
+Epoch:[1/1](60/7076), loss: 0.7195, ce: 1.4380, aux_loss: 0.0000, distill: 0.0011, learning_rate: 0.00000500, epoch_time: 96.000min
+Epoch:[1/1](80/7076), loss: 0.6783, ce: 1.3554, aux_loss: 0.0000, distill: 0.0012, learning_rate: 0.00000500, epoch_time: 78.000min
+Epoch:[1/1](100/7076), loss: 0.6544, ce: 1.3077, aux_loss: 0.0000, distill: 0.0012, learning_rate: 0.00000500, epoch_time: 68.000min
+Epoch:[1/1](120/7076), loss: 0.6512, ce: 1.3009, aux_loss: 0.0000, distill: 0.0014, learning_rate: 0.00000500, epoch_time: 60.000min
+Epoch:[1/1](140/7076), loss: 0.6948, ce: 1.3884, aux_loss: 0.0000, distill: 0.0013, learning_rate: 0.00000500, epoch_time: 55.000min
+Epoch:[1/1](160/7076), loss: 0.6922, ce: 1.3834, aux_loss: 0.0000, distill: 0.0011, learning_rate: 0.00000499, epoch_time: 51.000min
+Epoch:[1/1](180/7076), loss: 0.6971, ce: 1.3927, aux_loss: 0.0000, distill: 0.0015, learning_rate: 0.00000499, epoch_time: 48.000min
+Epoch:[1/1](200/7076), loss: 0.6913, ce: 1.3814, aux_loss: 0.0000, distill: 0.0012, learning_rate: 0.00000499, epoch_time: 46.000min
+Epoch:[1/1](220/7076), loss: 0.7481, ce: 1.4947, aux_loss: 0.0000, distill: 0.0014, learning_rate: 0.00000499, epoch_time: 44.000min
+Epoch:[1/1](240/7076), loss: 0.6483, ce: 1.2948, aux_loss: 0.0000, distill: 0.0018, learning_rate: 0.00000499, epoch_time: 42.000min
+Epoch:[1/1](260/7076), loss: 0.6546, ce: 1.3078, aux_loss: 0.0000, distill: 0.0014, learning_rate: 0.00000499, epoch_time: 41.000min
+Epoch:[1/1](280/7076), loss: 0.6853, ce: 1.3692, aux_loss: 0.0000, distill: 0.0014, learning_rate: 0.00000498, epoch_time: 39.000min
+Epoch:[1/1](300/7076), loss: 0.6871, ce: 1.3727, aux_loss: 0.0000, distill: 0.0015, learning_rate: 0.00000498, epoch_time: 38.000min
+Epoch:[1/1](320/7076), loss: 0.6818, ce: 1.3619, aux_loss: 0.0000, distill: 0.0017, learning_rate: 0.00000498, epoch_time: 59.000min
+Epoch:[1/1](340/7076), loss: 0.6810, ce: 1.3601, aux_loss: 0.0000, distill: 0.0019, learning_rate: 0.00000497, epoch_time: 57.000min
+Epoch:[1/1](360/7076), loss: 0.6712, ce: 1.3406, aux_loss: 0.0000, distill: 0.0018, learning_rate: 0.00000497, epoch_time: 55.000min
+Epoch:[1/1](380/7076), loss: 0.6727, ce: 1.3437, aux_loss: 0.0000, distill: 0.0018, learning_rate: 0.00000497, epoch_time: 53.000min
+Epoch:[1/1](400/7076), loss: 0.6992, ce: 1.3969, aux_loss: 0.0000, distill: 0.0015, learning_rate: 0.00000496, epoch_time: 51.000min
+Epoch:[1/1](420/7076), loss: 0.7009, ce: 1.3999, aux_loss: 0.0000, distill: 0.0019, learning_rate: 0.00000496, epoch_time: 50.000min
+Epoch:[1/1](440/7076), loss: 0.6901, ce: 1.3782, aux_loss: 0.0000, distill: 0.0020, learning_rate: 0.00000496, epoch_time: 49.000min
+Epoch:[1/1](460/7076), loss: 0.6934, ce: 1.3849, aux_loss: 0.0000, distill: 0.0020, learning_rate: 0.00000495, epoch_time: 62.000min
+Epoch:[1/1](480/7076), loss: 0.6901, ce: 1.3782, aux_loss: 0.0000, distill: 0.0019, learning_rate: 0.00000495, epoch_time: 60.000min
+Epoch:[1/1](500/7076), loss: 0.6694, ce: 1.3371, aux_loss: 0.0000, distill: 0.0017, learning_rate: 0.00000494, epoch_time: 59.000min
+Epoch:[1/1](520/7076), loss: 0.6836, ce: 1.3654, aux_loss: 0.0000, distill: 0.0018, learning_rate: 0.00000494, epoch_time: 57.000min
+Epoch:[1/1](540/7076), loss: 0.6661, ce: 1.3306, aux_loss: 0.0000, distill: 0.0017, learning_rate: 0.00000494, epoch_time: 56.000min
+Epoch:[1/1](560/7076), loss: 0.6879, ce: 1.3738, aux_loss: 0.0000, distill: 0.0021, learning_rate: 0.00000493, epoch_time: 55.000min
+Epoch:[1/1](580/7076), loss: 0.7145, ce: 1.4268, aux_loss: 0.0000, distill: 0.0021, learning_rate: 0.00000493, epoch_time: 53.000min
+Epoch:[1/1](600/7076), loss: 0.6805, ce: 1.3592, aux_loss: 0.0000, distill: 0.0019, learning_rate: 0.00000492, epoch_time: 52.000min
+Epoch:[1/1](620/7076), loss: 0.7097, ce: 1.4172, aux_loss: 0.0000, distill: 0.0021, learning_rate: 0.00000492, epoch_time: 51.000min
+Epoch:[1/1](640/7076), loss: 0.6974, ce: 1.3928, aux_loss: 0.0000, distill: 0.0020, learning_rate: 0.00000491, epoch_time: 50.000min
+Epoch:[1/1](660/7076), loss: 0.6558, ce: 1.3099, aux_loss: 0.0000, distill: 0.0017, learning_rate: 0.00000490, epoch_time: 49.000min
+Epoch:[1/1](680/7076), loss: 0.6753, ce: 1.3487, aux_loss: 0.0000, distill: 0.0019, learning_rate: 0.00000490, epoch_time: 48.000min
+Epoch:[1/1](700/7076), loss: 0.7012, ce: 1.4005, aux_loss: 0.0000, distill: 0.0018, learning_rate: 0.00000489, epoch_time: 47.000min
+Epoch:[1/1](720/7076), loss: 0.6854, ce: 1.3684, aux_loss: 0.0000, distill: 0.0023, learning_rate: 0.00000489, epoch_time: 47.000min
+Epoch:[1/1](740/7076), loss: 0.6655, ce: 1.3288, aux_loss: 0.0000, distill: 0.0023, learning_rate: 0.00000488, epoch_time: 46.000min
+Epoch:[1/1](760/7076), loss: 0.6781, ce: 1.3534, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000487, epoch_time: 45.000min
+Epoch:[1/1](780/7076), loss: 0.6720, ce: 1.3419, aux_loss: 0.0000, distill: 0.0021, learning_rate: 0.00000487, epoch_time: 45.000min
+Epoch:[1/1](800/7076), loss: 0.7413, ce: 1.4803, aux_loss: 0.0000, distill: 0.0024, learning_rate: 0.00000486, epoch_time: 44.000min
+Epoch:[1/1](820/7076), loss: 0.7144, ce: 1.4261, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000485, epoch_time: 43.000min
+Epoch:[1/1](840/7076), loss: 0.6839, ce: 1.3660, aux_loss: 0.0000, distill: 0.0018, learning_rate: 0.00000485, epoch_time: 43.000min
+Epoch:[1/1](860/7076), loss: 0.6565, ce: 1.3106, aux_loss: 0.0000, distill: 0.0024, learning_rate: 0.00000484, epoch_time: 42.000min
+Epoch:[1/1](880/7076), loss: 0.6914, ce: 1.3807, aux_loss: 0.0000, distill: 0.0020, learning_rate: 0.00000483, epoch_time: 42.000min
+Epoch:[1/1](900/7076), loss: 0.7060, ce: 1.4101, aux_loss: 0.0000, distill: 0.0019, learning_rate: 0.00000482, epoch_time: 41.000min
+Epoch:[1/1](920/7076), loss: 0.6853, ce: 1.3682, aux_loss: 0.0000, distill: 0.0024, learning_rate: 0.00000481, epoch_time: 41.000min
+Epoch:[1/1](940/7076), loss: 0.7042, ce: 1.4061, aux_loss: 0.0000, distill: 0.0023, learning_rate: 0.00000481, epoch_time: 41.000min
+Epoch:[1/1](960/7076), loss: 0.7068, ce: 1.4116, aux_loss: 0.0000, distill: 0.0020, learning_rate: 0.00000480, epoch_time: 40.000min
+Epoch:[1/1](980/7076), loss: 0.6903, ce: 1.3787, aux_loss: 0.0000, distill: 0.0019, learning_rate: 0.00000479, epoch_time: 40.000min
+Epoch:[1/1](1000/7076), loss: 0.6767, ce: 1.3510, aux_loss: 0.0000, distill: 0.0024, learning_rate: 0.00000478, epoch_time: 39.000min
+Epoch:[1/1](1020/7076), loss: 0.6526, ce: 1.3027, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000477, epoch_time: 40.000min
+Epoch:[1/1](1040/7076), loss: 0.6685, ce: 1.3348, aux_loss: 0.0000, distill: 0.0022, learning_rate: 0.00000476, epoch_time: 40.000min
+Epoch:[1/1](1060/7076), loss: 0.7036, ce: 1.4052, aux_loss: 0.0000, distill: 0.0021, learning_rate: 0.00000476, epoch_time: 39.000min
+Epoch:[1/1](1080/7076), loss: 0.6763, ce: 1.3498, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000475, epoch_time: 39.000min
+Epoch:[1/1](1100/7076), loss: 0.6694, ce: 1.3365, aux_loss: 0.0000, distill: 0.0023, learning_rate: 0.00000474, epoch_time: 39.000min
+Epoch:[1/1](1120/7076), loss: 0.6514, ce: 1.3000, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000473, epoch_time: 38.000min
+Epoch:[1/1](1140/7076), loss: 0.6500, ce: 1.2967, aux_loss: 0.0000, distill: 0.0034, learning_rate: 0.00000472, epoch_time: 38.000min
+Epoch:[1/1](1160/7076), loss: 0.6856, ce: 1.3686, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000471, epoch_time: 38.000min
+Epoch:[1/1](1180/7076), loss: 0.6919, ce: 1.3815, aux_loss: 0.0000, distill: 0.0023, learning_rate: 0.00000470, epoch_time: 37.000min
+Epoch:[1/1](1200/7076), loss: 0.6719, ce: 1.3406, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000469, epoch_time: 37.000min
+Epoch:[1/1](1220/7076), loss: 0.6844, ce: 1.3658, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000468, epoch_time: 37.000min
+Epoch:[1/1](1240/7076), loss: 0.6916, ce: 1.3810, aux_loss: 0.0000, distill: 0.0022, learning_rate: 0.00000467, epoch_time: 37.000min
+Epoch:[1/1](1260/7076), loss: 0.6958, ce: 1.3895, aux_loss: 0.0000, distill: 0.0022, learning_rate: 0.00000466, epoch_time: 36.000min
+Epoch:[1/1](1280/7076), loss: 0.6416, ce: 1.2809, aux_loss: 0.0000, distill: 0.0022, learning_rate: 0.00000465, epoch_time: 36.000min
+Epoch:[1/1](1300/7076), loss: 0.6603, ce: 1.3184, aux_loss: 0.0000, distill: 0.0022, learning_rate: 0.00000464, epoch_time: 36.000min
+Epoch:[1/1](1320/7076), loss: 0.6611, ce: 1.3195, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000462, epoch_time: 36.000min
+Epoch:[1/1](1340/7076), loss: 0.6728, ce: 1.3434, aux_loss: 0.0000, distill: 0.0021, learning_rate: 0.00000461, epoch_time: 35.000min
+Epoch:[1/1](1360/7076), loss: 0.6955, ce: 1.3885, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000460, epoch_time: 35.000min
+Epoch:[1/1](1380/7076), loss: 0.7199, ce: 1.4369, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000459, epoch_time: 35.000min
+Epoch:[1/1](1400/7076), loss: 0.7228, ce: 1.4434, aux_loss: 0.0000, distill: 0.0021, learning_rate: 0.00000458, epoch_time: 35.000min
+Epoch:[1/1](1420/7076), loss: 0.7128, ce: 1.4228, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000457, epoch_time: 34.000min
+Epoch:[1/1](1440/7076), loss: 0.6793, ce: 1.3563, aux_loss: 0.0000, distill: 0.0022, learning_rate: 0.00000456, epoch_time: 34.000min
+Epoch:[1/1](1460/7076), loss: 0.6951, ce: 1.3882, aux_loss: 0.0000, distill: 0.0021, learning_rate: 0.00000454, epoch_time: 34.000min
+Epoch:[1/1](1480/7076), loss: 0.6661, ce: 1.3287, aux_loss: 0.0000, distill: 0.0036, learning_rate: 0.00000453, epoch_time: 34.000min
+Epoch:[1/1](1500/7076), loss: 0.6781, ce: 1.3537, aux_loss: 0.0000, distill: 0.0025, learning_rate: 0.00000452, epoch_time: 33.000min
+Epoch:[1/1](1520/7076), loss: 0.6636, ce: 1.3248, aux_loss: 0.0000, distill: 0.0024, learning_rate: 0.00000451, epoch_time: 34.000min
+Epoch:[1/1](1540/7076), loss: 0.6879, ce: 1.3736, aux_loss: 0.0000, distill: 0.0023, learning_rate: 0.00000449, epoch_time: 34.000min
+Epoch:[1/1](1560/7076), loss: 0.6478, ce: 1.2932, aux_loss: 0.0000, distill: 0.0023, learning_rate: 0.00000448, epoch_time: 33.000min
+Epoch:[1/1](1580/7076), loss: 0.6636, ce: 1.3250, aux_loss: 0.0000, distill: 0.0022, learning_rate: 0.00000447, epoch_time: 33.000min
+Epoch:[1/1](1600/7076), loss: 0.6625, ce: 1.3221, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000446, epoch_time: 33.000min
+Epoch:[1/1](1620/7076), loss: 0.6757, ce: 1.3491, aux_loss: 0.0000, distill: 0.0023, learning_rate: 0.00000444, epoch_time: 33.000min
+Epoch:[1/1](1640/7076), loss: 0.6783, ce: 1.3539, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000443, epoch_time: 33.000min
+Epoch:[1/1](1660/7076), loss: 0.7161, ce: 1.4296, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000442, epoch_time: 32.000min
+Epoch:[1/1](1680/7076), loss: 0.6718, ce: 1.3405, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000440, epoch_time: 32.000min
+Epoch:[1/1](1700/7076), loss: 0.6523, ce: 1.3015, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000439, epoch_time: 32.000min
+Epoch:[1/1](1720/7076), loss: 0.6882, ce: 1.3735, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000438, epoch_time: 32.000min
+Epoch:[1/1](1740/7076), loss: 0.7248, ce: 1.4469, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000436, epoch_time: 32.000min
+Epoch:[1/1](1760/7076), loss: 0.6909, ce: 1.3794, aux_loss: 0.0000, distill: 0.0024, learning_rate: 0.00000435, epoch_time: 31.000min
+Epoch:[1/1](1780/7076), loss: 0.6959, ce: 1.3891, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000433, epoch_time: 31.000min
+Epoch:[1/1](1800/7076), loss: 0.6639, ce: 1.3245, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000432, epoch_time: 31.000min
+Epoch:[1/1](1820/7076), loss: 0.7234, ce: 1.4442, aux_loss: 0.0000, distill: 0.0025, learning_rate: 0.00000430, epoch_time: 31.000min
+Epoch:[1/1](1840/7076), loss: 0.6895, ce: 1.3770, aux_loss: 0.0000, distill: 0.0021, learning_rate: 0.00000429, epoch_time: 31.000min
+Epoch:[1/1](1860/7076), loss: 0.7021, ce: 1.4018, aux_loss: 0.0000, distill: 0.0024, learning_rate: 0.00000428, epoch_time: 30.000min
+Epoch:[1/1](1880/7076), loss: 0.7138, ce: 1.4247, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000426, epoch_time: 30.000min
+Epoch:[1/1](1900/7076), loss: 0.7112, ce: 1.4199, aux_loss: 0.0000, distill: 0.0025, learning_rate: 0.00000425, epoch_time: 30.000min
+Epoch:[1/1](1920/7076), loss: 0.7119, ce: 1.4213, aux_loss: 0.0000, distill: 0.0025, learning_rate: 0.00000423, epoch_time: 30.000min
+Epoch:[1/1](1940/7076), loss: 0.6987, ce: 1.3946, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000422, epoch_time: 30.000min
+Epoch:[1/1](1960/7076), loss: 0.6756, ce: 1.3488, aux_loss: 0.0000, distill: 0.0024, learning_rate: 0.00000420, epoch_time: 30.000min
+Epoch:[1/1](1980/7076), loss: 0.6420, ce: 1.2814, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000419, epoch_time: 29.000min
+Epoch:[1/1](2000/7076), loss: 0.7053, ce: 1.4076, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000417, epoch_time: 29.000min
+Epoch:[1/1](2020/7076), loss: 0.6732, ce: 1.3433, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000415, epoch_time: 30.000min
+Epoch:[1/1](2040/7076), loss: 0.7034, ce: 1.4039, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000414, epoch_time: 29.000min
+Epoch:[1/1](2060/7076), loss: 0.6868, ce: 1.3708, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000412, epoch_time: 29.000min
+Epoch:[1/1](2080/7076), loss: 0.6816, ce: 1.3607, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000411, epoch_time: 29.000min
+Epoch:[1/1](2100/7076), loss: 0.6873, ce: 1.3721, aux_loss: 0.0000, distill: 0.0025, learning_rate: 0.00000409, epoch_time: 29.000min
+Epoch:[1/1](2120/7076), loss: 0.6637, ce: 1.3243, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000407, epoch_time: 29.000min
+Epoch:[1/1](2140/7076), loss: 0.7307, ce: 1.4587, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000406, epoch_time: 28.000min
+Epoch:[1/1](2160/7076), loss: 0.7044, ce: 1.4057, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000404, epoch_time: 28.000min
+Epoch:[1/1](2180/7076), loss: 0.7033, ce: 1.4039, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000403, epoch_time: 28.000min
+Epoch:[1/1](2200/7076), loss: 0.6650, ce: 1.3273, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000401, epoch_time: 28.000min
+Epoch:[1/1](2220/7076), loss: 0.6519, ce: 1.3003, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000399, epoch_time: 28.000min
+Epoch:[1/1](2240/7076), loss: 0.6831, ce: 1.3625, aux_loss: 0.0000, distill: 0.0038, learning_rate: 0.00000398, epoch_time: 28.000min
+Epoch:[1/1](2260/7076), loss: 0.7136, ce: 1.4245, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000396, epoch_time: 28.000min
+Epoch:[1/1](2280/7076), loss: 0.7071, ce: 1.4112, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000394, epoch_time: 27.000min
+Epoch:[1/1](2300/7076), loss: 0.6991, ce: 1.3944, aux_loss: 0.0000, distill: 0.0038, learning_rate: 0.00000393, epoch_time: 27.000min
+Epoch:[1/1](2320/7076), loss: 0.6683, ce: 1.3335, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000391, epoch_time: 27.000min
+Epoch:[1/1](2340/7076), loss: 0.7115, ce: 1.4194, aux_loss: 0.0000, distill: 0.0036, learning_rate: 0.00000389, epoch_time: 27.000min
+Epoch:[1/1](2360/7076), loss: 0.6775, ce: 1.3515, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000387, epoch_time: 27.000min
+Epoch:[1/1](2380/7076), loss: 0.6521, ce: 1.3003, aux_loss: 0.0000, distill: 0.0040, learning_rate: 0.00000386, epoch_time: 27.000min
+Epoch:[1/1](2400/7076), loss: 0.6554, ce: 1.3077, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000384, epoch_time: 26.000min
+Epoch:[1/1](2420/7076), loss: 0.6807, ce: 1.3589, aux_loss: 0.0000, distill: 0.0025, learning_rate: 0.00000382, epoch_time: 26.000min
+Epoch:[1/1](2440/7076), loss: 0.6968, ce: 1.3897, aux_loss: 0.0000, distill: 0.0039, learning_rate: 0.00000380, epoch_time: 26.000min
+Epoch:[1/1](2460/7076), loss: 0.7044, ce: 1.4056, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000379, epoch_time: 26.000min
+Epoch:[1/1](2480/7076), loss: 0.6914, ce: 1.3799, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000377, epoch_time: 26.000min
+Epoch:[1/1](2500/7076), loss: 0.6737, ce: 1.3445, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000375, epoch_time: 26.000min
+Epoch:[1/1](2520/7076), loss: 0.6633, ce: 1.3237, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000373, epoch_time: 26.000min
+Epoch:[1/1](2540/7076), loss: 0.7146, ce: 1.4266, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000371, epoch_time: 26.000min
+Epoch:[1/1](2560/7076), loss: 0.6960, ce: 1.3893, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000370, epoch_time: 26.000min
+Epoch:[1/1](2580/7076), loss: 0.6766, ce: 1.3503, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000368, epoch_time: 25.000min
+Epoch:[1/1](2600/7076), loss: 0.6851, ce: 1.3676, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000366, epoch_time: 25.000min
+Epoch:[1/1](2620/7076), loss: 0.6517, ce: 1.3006, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000364, epoch_time: 25.000min
+Epoch:[1/1](2640/7076), loss: 0.6889, ce: 1.3753, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000362, epoch_time: 25.000min
+Epoch:[1/1](2660/7076), loss: 0.6987, ce: 1.3939, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000361, epoch_time: 25.000min
+Epoch:[1/1](2680/7076), loss: 0.7121, ce: 1.4217, aux_loss: 0.0000, distill: 0.0025, learning_rate: 0.00000359, epoch_time: 25.000min
+Epoch:[1/1](2700/7076), loss: 0.6834, ce: 1.3636, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000357, epoch_time: 25.000min
+Epoch:[1/1](2720/7076), loss: 0.6902, ce: 1.3772, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000355, epoch_time: 24.000min
+Epoch:[1/1](2740/7076), loss: 0.6873, ce: 1.3719, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000353, epoch_time: 24.000min
+Epoch:[1/1](2760/7076), loss: 0.7274, ce: 1.4514, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000351, epoch_time: 24.000min
+Epoch:[1/1](2780/7076), loss: 0.6994, ce: 1.3959, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000349, epoch_time: 24.000min
+Epoch:[1/1](2800/7076), loss: 0.6553, ce: 1.3081, aux_loss: 0.0000, distill: 0.0025, learning_rate: 0.00000347, epoch_time: 24.000min
+Epoch:[1/1](2820/7076), loss: 0.6964, ce: 1.3895, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000346, epoch_time: 24.000min
+Epoch:[1/1](2840/7076), loss: 0.6795, ce: 1.3562, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000344, epoch_time: 24.000min
+Epoch:[1/1](2860/7076), loss: 0.6912, ce: 1.3789, aux_loss: 0.0000, distill: 0.0034, learning_rate: 0.00000342, epoch_time: 23.000min
+Epoch:[1/1](2880/7076), loss: 0.6472, ce: 1.2916, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000340, epoch_time: 23.000min
+Epoch:[1/1](2900/7076), loss: 0.6882, ce: 1.3723, aux_loss: 0.0000, distill: 0.0041, learning_rate: 0.00000338, epoch_time: 23.000min
+Epoch:[1/1](2920/7076), loss: 0.7012, ce: 1.3992, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000336, epoch_time: 23.000min
+Epoch:[1/1](2940/7076), loss: 0.6717, ce: 1.3403, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000334, epoch_time: 23.000min
+Epoch:[1/1](2960/7076), loss: 0.6960, ce: 1.3888, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000332, epoch_time: 23.000min
+Epoch:[1/1](2980/7076), loss: 0.6831, ce: 1.3634, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000330, epoch_time: 23.000min
+Epoch:[1/1](3000/7076), loss: 0.6695, ce: 1.3365, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000328, epoch_time: 23.000min
+Epoch:[1/1](3020/7076), loss: 0.6996, ce: 1.3959, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000326, epoch_time: 23.000min
+Epoch:[1/1](3040/7076), loss: 0.6849, ce: 1.3669, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000324, epoch_time: 23.000min
+Epoch:[1/1](3060/7076), loss: 0.7322, ce: 1.4615, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000322, epoch_time: 22.000min
+Epoch:[1/1](3080/7076), loss: 0.6585, ce: 1.3139, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000320, epoch_time: 22.000min
+Epoch:[1/1](3100/7076), loss: 0.6932, ce: 1.3836, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000318, epoch_time: 22.000min
+Epoch:[1/1](3120/7076), loss: 0.6625, ce: 1.3218, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000317, epoch_time: 22.000min
+Epoch:[1/1](3140/7076), loss: 0.6818, ce: 1.3609, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000315, epoch_time: 22.000min
+Epoch:[1/1](3160/7076), loss: 0.6506, ce: 1.2979, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000313, epoch_time: 22.000min
+Epoch:[1/1](3180/7076), loss: 0.6875, ce: 1.3722, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000311, epoch_time: 22.000min
+Epoch:[1/1](3200/7076), loss: 0.6560, ce: 1.3074, aux_loss: 0.0000, distill: 0.0046, learning_rate: 0.00000309, epoch_time: 21.000min
+Epoch:[1/1](3220/7076), loss: 0.7048, ce: 1.4067, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000307, epoch_time: 21.000min
+Epoch:[1/1](3240/7076), loss: 0.6960, ce: 1.3894, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000305, epoch_time: 21.000min
+Epoch:[1/1](3260/7076), loss: 0.6604, ce: 1.3180, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000303, epoch_time: 21.000min
+Epoch:[1/1](3280/7076), loss: 0.7107, ce: 1.4189, aux_loss: 0.0000, distill: 0.0025, learning_rate: 0.00000301, epoch_time: 21.000min
+Epoch:[1/1](3300/7076), loss: 0.6736, ce: 1.3446, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000299, epoch_time: 21.000min
+Epoch:[1/1](3320/7076), loss: 0.6918, ce: 1.3807, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000297, epoch_time: 21.000min
+Epoch:[1/1](3340/7076), loss: 0.6845, ce: 1.3653, aux_loss: 0.0000, distill: 0.0037, learning_rate: 0.00000295, epoch_time: 21.000min
+Epoch:[1/1](3360/7076), loss: 0.7044, ce: 1.4058, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000293, epoch_time: 20.000min
+Epoch:[1/1](3380/7076), loss: 0.6975, ce: 1.3917, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000291, epoch_time: 20.000min
+Epoch:[1/1](3400/7076), loss: 0.6874, ce: 1.3720, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000289, epoch_time: 20.000min
+Epoch:[1/1](3420/7076), loss: 0.6929, ce: 1.3826, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000287, epoch_time: 20.000min
+Epoch:[1/1](3440/7076), loss: 0.6815, ce: 1.3605, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000285, epoch_time: 20.000min
+Epoch:[1/1](3460/7076), loss: 0.6894, ce: 1.3756, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000283, epoch_time: 20.000min
+Epoch:[1/1](3480/7076), loss: 0.6525, ce: 1.3019, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000281, epoch_time: 20.000min
+Epoch:[1/1](3500/7076), loss: 0.7021, ce: 1.4006, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000279, epoch_time: 20.000min
+Epoch:[1/1](3520/7076), loss: 0.6846, ce: 1.3658, aux_loss: 0.0000, distill: 0.0034, learning_rate: 0.00000277, epoch_time: 20.000min
+Epoch:[1/1](3540/7076), loss: 0.6812, ce: 1.3587, aux_loss: 0.0000, distill: 0.0037, learning_rate: 0.00000275, epoch_time: 19.000min
+Epoch:[1/1](3560/7076), loss: 0.7157, ce: 1.4283, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000273, epoch_time: 19.000min
+Epoch:[1/1](3580/7076), loss: 0.7062, ce: 1.4098, aux_loss: 0.0000, distill: 0.0025, learning_rate: 0.00000271, epoch_time: 19.000min
+Epoch:[1/1](3600/7076), loss: 0.7148, ce: 1.4261, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000269, epoch_time: 19.000min
+Epoch:[1/1](3620/7076), loss: 0.6864, ce: 1.3680, aux_loss: 0.0000, distill: 0.0047, learning_rate: 0.00000267, epoch_time: 19.000min
+Epoch:[1/1](3640/7076), loss: 0.7266, ce: 1.4506, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000265, epoch_time: 19.000min
+Epoch:[1/1](3660/7076), loss: 0.6796, ce: 1.3556, aux_loss: 0.0000, distill: 0.0036, learning_rate: 0.00000263, epoch_time: 19.000min
+Epoch:[1/1](3680/7076), loss: 0.6758, ce: 1.3485, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000261, epoch_time: 19.000min
+Epoch:[1/1](3700/7076), loss: 0.6960, ce: 1.3888, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000259, epoch_time: 18.000min
+Epoch:[1/1](3720/7076), loss: 0.6645, ce: 1.3262, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000257, epoch_time: 18.000min
+Epoch:[1/1](3740/7076), loss: 0.7096, ce: 1.4163, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000255, epoch_time: 18.000min
+Epoch:[1/1](3760/7076), loss: 0.6915, ce: 1.3796, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000253, epoch_time: 18.000min
+Epoch:[1/1](3780/7076), loss: 0.7027, ce: 1.4023, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000251, epoch_time: 18.000min
+Epoch:[1/1](3800/7076), loss: 0.6942, ce: 1.3853, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000249, epoch_time: 18.000min
+Epoch:[1/1](3820/7076), loss: 0.6538, ce: 1.3050, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000247, epoch_time: 18.000min
+Epoch:[1/1](3840/7076), loss: 0.6820, ce: 1.3613, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000245, epoch_time: 18.000min
+Epoch:[1/1](3860/7076), loss: 0.6901, ce: 1.3763, aux_loss: 0.0000, distill: 0.0039, learning_rate: 0.00000243, epoch_time: 17.000min
+Epoch:[1/1](3880/7076), loss: 0.6533, ce: 1.3034, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000241, epoch_time: 17.000min
+Epoch:[1/1](3900/7076), loss: 0.7069, ce: 1.4108, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000239, epoch_time: 17.000min
+Epoch:[1/1](3920/7076), loss: 0.6618, ce: 1.3210, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000237, epoch_time: 17.000min
+Epoch:[1/1](3940/7076), loss: 0.7096, ce: 1.4161, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000235, epoch_time: 17.000min
+Epoch:[1/1](3960/7076), loss: 0.6568, ce: 1.3106, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000233, epoch_time: 17.000min
+Epoch:[1/1](3980/7076), loss: 0.6815, ce: 1.3594, aux_loss: 0.0000, distill: 0.0036, learning_rate: 0.00000231, epoch_time: 17.000min
+Epoch:[1/1](4000/7076), loss: 0.6884, ce: 1.3736, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000229, epoch_time: 17.000min
+Epoch:[1/1](4020/7076), loss: 0.6873, ce: 1.3719, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000227, epoch_time: 17.000min
+Epoch:[1/1](4040/7076), loss: 0.6768, ce: 1.3499, aux_loss: 0.0000, distill: 0.0037, learning_rate: 0.00000225, epoch_time: 16.000min
+Epoch:[1/1](4060/7076), loss: 0.7084, ce: 1.4140, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000223, epoch_time: 16.000min
+Epoch:[1/1](4080/7076), loss: 0.7143, ce: 1.4255, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000221, epoch_time: 16.000min
+Epoch:[1/1](4100/7076), loss: 0.7036, ce: 1.4040, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000219, epoch_time: 16.000min
+Epoch:[1/1](4120/7076), loss: 0.6826, ce: 1.3622, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000218, epoch_time: 16.000min
+Epoch:[1/1](4140/7076), loss: 0.6666, ce: 1.3292, aux_loss: 0.0000, distill: 0.0039, learning_rate: 0.00000216, epoch_time: 16.000min
+Epoch:[1/1](4160/7076), loss: 0.6952, ce: 1.3876, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000214, epoch_time: 16.000min
+Epoch:[1/1](4180/7076), loss: 0.6702, ce: 1.3377, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000212, epoch_time: 16.000min
+Epoch:[1/1](4200/7076), loss: 0.6611, ce: 1.3192, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000210, epoch_time: 15.000min
+Epoch:[1/1](4220/7076), loss: 0.6889, ce: 1.3745, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000208, epoch_time: 15.000min
+Epoch:[1/1](4240/7076), loss: 0.6866, ce: 1.3696, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000206, epoch_time: 15.000min
+Epoch:[1/1](4260/7076), loss: 0.7047, ce: 1.4065, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000204, epoch_time: 15.000min
+Epoch:[1/1](4280/7076), loss: 0.7114, ce: 1.4200, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000202, epoch_time: 15.000min
+Epoch:[1/1](4300/7076), loss: 0.7164, ce: 1.4288, aux_loss: 0.0000, distill: 0.0039, learning_rate: 0.00000200, epoch_time: 15.000min
+Epoch:[1/1](4320/7076), loss: 0.6884, ce: 1.3732, aux_loss: 0.0000, distill: 0.0036, learning_rate: 0.00000198, epoch_time: 15.000min
+Epoch:[1/1](4340/7076), loss: 0.6620, ce: 1.3211, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000197, epoch_time: 15.000min
+Epoch:[1/1](4360/7076), loss: 0.6947, ce: 1.3865, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000195, epoch_time: 15.000min
+Epoch:[1/1](4380/7076), loss: 0.6958, ce: 1.3882, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000193, epoch_time: 14.000min
+Epoch:[1/1](4400/7076), loss: 0.6553, ce: 1.3075, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000191, epoch_time: 14.000min
+Epoch:[1/1](4420/7076), loss: 0.7080, ce: 1.4119, aux_loss: 0.0000, distill: 0.0041, learning_rate: 0.00000189, epoch_time: 14.000min
+Epoch:[1/1](4440/7076), loss: 0.7035, ce: 1.4042, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000187, epoch_time: 14.000min
+Epoch:[1/1](4460/7076), loss: 0.6718, ce: 1.3404, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000185, epoch_time: 14.000min
+Epoch:[1/1](4480/7076), loss: 0.7230, ce: 1.4426, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000184, epoch_time: 14.000min
+Epoch:[1/1](4500/7076), loss: 0.6859, ce: 1.3687, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000182, epoch_time: 14.000min
+Epoch:[1/1](4520/7076), loss: 0.6993, ce: 1.3946, aux_loss: 0.0000, distill: 0.0039, learning_rate: 0.00000180, epoch_time: 14.000min
+Epoch:[1/1](4540/7076), loss: 0.7021, ce: 1.4008, aux_loss: 0.0000, distill: 0.0034, learning_rate: 0.00000178, epoch_time: 14.000min
+Epoch:[1/1](4560/7076), loss: 0.6835, ce: 1.3636, aux_loss: 0.0000, distill: 0.0034, learning_rate: 0.00000176, epoch_time: 13.000min
+Epoch:[1/1](4580/7076), loss: 0.7093, ce: 1.4159, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000175, epoch_time: 13.000min
+Epoch:[1/1](4600/7076), loss: 0.7019, ce: 1.4003, aux_loss: 0.0000, distill: 0.0036, learning_rate: 0.00000173, epoch_time: 13.000min
+Epoch:[1/1](4620/7076), loss: 0.6222, ce: 1.2412, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000171, epoch_time: 13.000min
+Epoch:[1/1](4640/7076), loss: 0.6767, ce: 1.3502, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000169, epoch_time: 13.000min
+Epoch:[1/1](4660/7076), loss: 0.6845, ce: 1.3657, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000167, epoch_time: 13.000min
+Epoch:[1/1](4680/7076), loss: 0.6674, ce: 1.3313, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000166, epoch_time: 13.000min
+Epoch:[1/1](4700/7076), loss: 0.6802, ce: 1.3574, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000164, epoch_time: 13.000min
+Epoch:[1/1](4720/7076), loss: 0.6947, ce: 1.3859, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000162, epoch_time: 13.000min
+Epoch:[1/1](4740/7076), loss: 0.7063, ce: 1.4087, aux_loss: 0.0000, distill: 0.0040, learning_rate: 0.00000161, epoch_time: 12.000min
+Epoch:[1/1](4760/7076), loss: 0.6672, ce: 1.3313, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000159, epoch_time: 12.000min
+Epoch:[1/1](4780/7076), loss: 0.6606, ce: 1.3179, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000157, epoch_time: 12.000min
+Epoch:[1/1](4800/7076), loss: 0.6837, ce: 1.3644, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000155, epoch_time: 12.000min
+Epoch:[1/1](4820/7076), loss: 0.6802, ce: 1.3568, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000154, epoch_time: 12.000min
+Epoch:[1/1](4840/7076), loss: 0.6762, ce: 1.3492, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000152, epoch_time: 12.000min
+Epoch:[1/1](4860/7076), loss: 0.7182, ce: 1.4335, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000150, epoch_time: 12.000min
+Epoch:[1/1](4880/7076), loss: 0.7420, ce: 1.4813, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000149, epoch_time: 12.000min
+Epoch:[1/1](4900/7076), loss: 0.6729, ce: 1.3421, aux_loss: 0.0000, distill: 0.0038, learning_rate: 0.00000147, epoch_time: 11.000min
+Epoch:[1/1](4920/7076), loss: 0.6749, ce: 1.3466, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000145, epoch_time: 11.000min
+Epoch:[1/1](4940/7076), loss: 0.6727, ce: 1.3426, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000144, epoch_time: 11.000min
+Epoch:[1/1](4960/7076), loss: 0.6857, ce: 1.3685, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000142, epoch_time: 11.000min
+Epoch:[1/1](4980/7076), loss: 0.6837, ce: 1.3641, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000141, epoch_time: 11.000min
+Epoch:[1/1](5000/7076), loss: 0.6855, ce: 1.3682, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000139, epoch_time: 11.000min
+Epoch:[1/1](5020/7076), loss: 0.6926, ce: 1.3813, aux_loss: 0.0000, distill: 0.0038, learning_rate: 0.00000137, epoch_time: 11.000min
+Epoch:[1/1](5040/7076), loss: 0.6979, ce: 1.3931, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000136, epoch_time: 11.000min
+Epoch:[1/1](5060/7076), loss: 0.6833, ce: 1.3639, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000134, epoch_time: 11.000min
+Epoch:[1/1](5080/7076), loss: 0.6555, ce: 1.3084, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000133, epoch_time: 10.000min
+Epoch:[1/1](5100/7076), loss: 0.6922, ce: 1.3815, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000131, epoch_time: 10.000min
+Epoch:[1/1](5120/7076), loss: 0.6853, ce: 1.3679, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000130, epoch_time: 10.000min
+Epoch:[1/1](5140/7076), loss: 0.7446, ce: 1.4864, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000128, epoch_time: 10.000min
+Epoch:[1/1](5160/7076), loss: 0.6761, ce: 1.3494, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000127, epoch_time: 10.000min
+Epoch:[1/1](5180/7076), loss: 0.7087, ce: 1.4143, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000125, epoch_time: 10.000min
+Epoch:[1/1](5200/7076), loss: 0.7005, ce: 1.3983, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000124, epoch_time: 10.000min
+Epoch:[1/1](5220/7076), loss: 0.6790, ce: 1.3554, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000122, epoch_time: 10.000min
+Epoch:[1/1](5240/7076), loss: 0.7146, ce: 1.4254, aux_loss: 0.0000, distill: 0.0038, learning_rate: 0.00000121, epoch_time: 10.000min
+Epoch:[1/1](5260/7076), loss: 0.7048, ce: 1.4067, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000119, epoch_time: 9.000min
+Epoch:[1/1](5280/7076), loss: 0.6878, ce: 1.3723, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000118, epoch_time: 9.000min
+Epoch:[1/1](5300/7076), loss: 0.7006, ce: 1.3986, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000116, epoch_time: 9.000min
+Epoch:[1/1](5320/7076), loss: 0.6926, ce: 1.3825, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000115, epoch_time: 9.000min
+Epoch:[1/1](5340/7076), loss: 0.7124, ce: 1.4221, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000114, epoch_time: 9.000min
+Epoch:[1/1](5360/7076), loss: 0.6928, ce: 1.3816, aux_loss: 0.0000, distill: 0.0041, learning_rate: 0.00000112, epoch_time: 9.000min
+Epoch:[1/1](5380/7076), loss: 0.6879, ce: 1.3714, aux_loss: 0.0000, distill: 0.0043, learning_rate: 0.00000111, epoch_time: 9.000min
+Epoch:[1/1](5400/7076), loss: 0.6473, ce: 1.2915, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000109, epoch_time: 9.000min
+Epoch:[1/1](5420/7076), loss: 0.7273, ce: 1.4517, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000108, epoch_time: 9.000min
+Epoch:[1/1](5440/7076), loss: 0.6765, ce: 1.3498, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000107, epoch_time: 8.000min
+Epoch:[1/1](5460/7076), loss: 0.6827, ce: 1.3610, aux_loss: 0.0000, distill: 0.0044, learning_rate: 0.00000105, epoch_time: 8.000min
+Epoch:[1/1](5480/7076), loss: 0.7098, ce: 1.4169, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000104, epoch_time: 8.000min
+Epoch:[1/1](5500/7076), loss: 0.6736, ce: 1.3445, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000103, epoch_time: 8.000min
+Epoch:[1/1](5520/7076), loss: 0.6827, ce: 1.3619, aux_loss: 0.0000, distill: 0.0036, learning_rate: 0.00000102, epoch_time: 8.000min
+Epoch:[1/1](5540/7076), loss: 0.7160, ce: 1.4276, aux_loss: 0.0000, distill: 0.0044, learning_rate: 0.00000100, epoch_time: 8.000min
+Epoch:[1/1](5560/7076), loss: 0.6755, ce: 1.3482, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000099, epoch_time: 8.000min
+Epoch:[1/1](5580/7076), loss: 0.6985, ce: 1.3947, aux_loss: 0.0000, distill: 0.0024, learning_rate: 0.00000098, epoch_time: 8.000min
+Epoch:[1/1](5600/7076), loss: 0.6799, ce: 1.3568, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000097, epoch_time: 8.000min
+Epoch:[1/1](5620/7076), loss: 0.6903, ce: 1.3779, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000095, epoch_time: 7.000min
+Epoch:[1/1](5640/7076), loss: 0.6819, ce: 1.3610, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000094, epoch_time: 7.000min
+Epoch:[1/1](5660/7076), loss: 0.6847, ce: 1.3662, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000093, epoch_time: 7.000min
+Epoch:[1/1](5680/7076), loss: 0.7059, ce: 1.4075, aux_loss: 0.0000, distill: 0.0042, learning_rate: 0.00000092, epoch_time: 7.000min
+Epoch:[1/1](5700/7076), loss: 0.6757, ce: 1.3487, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000091, epoch_time: 7.000min
+Epoch:[1/1](5720/7076), loss: 0.6859, ce: 1.3679, aux_loss: 0.0000, distill: 0.0039, learning_rate: 0.00000090, epoch_time: 7.000min
+Epoch:[1/1](5740/7076), loss: 0.6993, ce: 1.3958, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000088, epoch_time: 7.000min
+Epoch:[1/1](5760/7076), loss: 0.6963, ce: 1.3898, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000087, epoch_time: 7.000min
+Epoch:[1/1](5780/7076), loss: 0.6920, ce: 1.3801, aux_loss: 0.0000, distill: 0.0039, learning_rate: 0.00000086, epoch_time: 7.000min
+Epoch:[1/1](5800/7076), loss: 0.6587, ce: 1.3148, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000085, epoch_time: 6.000min
+Epoch:[1/1](5820/7076), loss: 0.7280, ce: 1.4529, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000084, epoch_time: 6.000min
+Epoch:[1/1](5840/7076), loss: 0.6841, ce: 1.3655, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000083, epoch_time: 6.000min
+Epoch:[1/1](5860/7076), loss: 0.6862, ce: 1.3688, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000082, epoch_time: 6.000min
+Epoch:[1/1](5880/7076), loss: 0.6691, ce: 1.3347, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000081, epoch_time: 6.000min
+Epoch:[1/1](5900/7076), loss: 0.7331, ce: 1.4630, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000080, epoch_time: 6.000min
+Epoch:[1/1](5920/7076), loss: 0.6734, ce: 1.3434, aux_loss: 0.0000, distill: 0.0034, learning_rate: 0.00000079, epoch_time: 6.000min
+Epoch:[1/1](5940/7076), loss: 0.6789, ce: 1.3541, aux_loss: 0.0000, distill: 0.0038, learning_rate: 0.00000078, epoch_time: 6.000min
+Epoch:[1/1](5960/7076), loss: 0.6960, ce: 1.3893, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000077, epoch_time: 6.000min
+Epoch:[1/1](5980/7076), loss: 0.6654, ce: 1.3268, aux_loss: 0.0000, distill: 0.0041, learning_rate: 0.00000076, epoch_time: 5.000min
+Epoch:[1/1](6000/7076), loss: 0.6945, ce: 1.3863, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000075, epoch_time: 5.000min
+Epoch:[1/1](6020/7076), loss: 0.6666, ce: 1.3301, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000074, epoch_time: 5.000min
+Epoch:[1/1](6040/7076), loss: 0.7106, ce: 1.4183, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000073, epoch_time: 5.000min
+Epoch:[1/1](6060/7076), loss: 0.7049, ce: 1.4062, aux_loss: 0.0000, distill: 0.0037, learning_rate: 0.00000073, epoch_time: 5.000min
+Epoch:[1/1](6080/7076), loss: 0.6526, ce: 1.3023, aux_loss: 0.0000, distill: 0.0029, learning_rate: 0.00000072, epoch_time: 5.000min
+Epoch:[1/1](6100/7076), loss: 0.7007, ce: 1.3987, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000071, epoch_time: 5.000min
+Epoch:[1/1](6120/7076), loss: 0.6904, ce: 1.3777, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000070, epoch_time: 5.000min
+Epoch:[1/1](6140/7076), loss: 0.6762, ce: 1.3491, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000069, epoch_time: 5.000min
+Epoch:[1/1](6160/7076), loss: 0.6788, ce: 1.3536, aux_loss: 0.0000, distill: 0.0041, learning_rate: 0.00000068, epoch_time: 4.000min
+Epoch:[1/1](6180/7076), loss: 0.6997, ce: 1.3964, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000068, epoch_time: 4.000min
+Epoch:[1/1](6200/7076), loss: 0.6991, ce: 1.3954, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000067, epoch_time: 4.000min
+Epoch:[1/1](6220/7076), loss: 0.6820, ce: 1.3604, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000066, epoch_time: 4.000min
+Epoch:[1/1](6240/7076), loss: 0.6606, ce: 1.3181, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000065, epoch_time: 4.000min
+Epoch:[1/1](6260/7076), loss: 0.7226, ce: 1.4417, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000065, epoch_time: 4.000min
+Epoch:[1/1](6280/7076), loss: 0.6591, ce: 1.3143, aux_loss: 0.0000, distill: 0.0038, learning_rate: 0.00000064, epoch_time: 4.000min
+Epoch:[1/1](6300/7076), loss: 0.6651, ce: 1.3269, aux_loss: 0.0000, distill: 0.0034, learning_rate: 0.00000063, epoch_time: 4.000min
+Epoch:[1/1](6320/7076), loss: 0.6942, ce: 1.3844, aux_loss: 0.0000, distill: 0.0039, learning_rate: 0.00000063, epoch_time: 4.000min
+Epoch:[1/1](6340/7076), loss: 0.6666, ce: 1.3300, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000062, epoch_time: 4.000min
+Epoch:[1/1](6360/7076), loss: 0.6678, ce: 1.3329, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000061, epoch_time: 3.000min
+Epoch:[1/1](6380/7076), loss: 0.6832, ce: 1.3637, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000061, epoch_time: 3.000min
+Epoch:[1/1](6400/7076), loss: 0.7182, ce: 1.4330, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000060, epoch_time: 3.000min
+Epoch:[1/1](6420/7076), loss: 0.6720, ce: 1.3413, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000059, epoch_time: 3.000min
+Epoch:[1/1](6440/7076), loss: 0.6443, ce: 1.2850, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000059, epoch_time: 3.000min
+Epoch:[1/1](6460/7076), loss: 0.6843, ce: 1.3656, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000058, epoch_time: 3.000min
+Epoch:[1/1](6480/7076), loss: 0.6459, ce: 1.2890, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000058, epoch_time: 3.000min
+Epoch:[1/1](6500/7076), loss: 0.6676, ce: 1.3327, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000057, epoch_time: 3.000min
+Epoch:[1/1](6520/7076), loss: 0.6824, ce: 1.3616, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000057, epoch_time: 3.000min
+Epoch:[1/1](6540/7076), loss: 0.6848, ce: 1.3666, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000056, epoch_time: 2.000min
+Epoch:[1/1](6560/7076), loss: 0.7267, ce: 1.4504, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000056, epoch_time: 2.000min
+Epoch:[1/1](6580/7076), loss: 0.6444, ce: 1.2852, aux_loss: 0.0000, distill: 0.0036, learning_rate: 0.00000055, epoch_time: 2.000min
+Epoch:[1/1](6600/7076), loss: 0.6830, ce: 1.3635, aux_loss: 0.0000, distill: 0.0025, learning_rate: 0.00000055, epoch_time: 2.000min
+Epoch:[1/1](6620/7076), loss: 0.7180, ce: 1.4326, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000055, epoch_time: 2.000min
+Epoch:[1/1](6640/7076), loss: 0.6565, ce: 1.3104, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000054, epoch_time: 2.000min
+Epoch:[1/1](6660/7076), loss: 0.7559, ce: 1.5080, aux_loss: 0.0000, distill: 0.0038, learning_rate: 0.00000054, epoch_time: 2.000min
+Epoch:[1/1](6680/7076), loss: 0.7177, ce: 1.4328, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000053, epoch_time: 2.000min
+Epoch:[1/1](6700/7076), loss: 0.6771, ce: 1.3507, aux_loss: 0.0000, distill: 0.0034, learning_rate: 0.00000053, epoch_time: 2.000min
+Epoch:[1/1](6720/7076), loss: 0.6858, ce: 1.3689, aux_loss: 0.0000, distill: 0.0027, learning_rate: 0.00000053, epoch_time: 1.000min
+Epoch:[1/1](6740/7076), loss: 0.6871, ce: 1.3707, aux_loss: 0.0000, distill: 0.0036, learning_rate: 0.00000052, epoch_time: 1.000min
+Epoch:[1/1](6760/7076), loss: 0.7048, ce: 1.4065, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000052, epoch_time: 1.000min
+Epoch:[1/1](6780/7076), loss: 0.6647, ce: 1.3264, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000052, epoch_time: 1.000min
+Epoch:[1/1](6800/7076), loss: 0.6748, ce: 1.3466, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000052, epoch_time: 1.000min
+Epoch:[1/1](6820/7076), loss: 0.6745, ce: 1.3462, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000051, epoch_time: 1.000min
+Epoch:[1/1](6840/7076), loss: 0.7446, ce: 1.4862, aux_loss: 0.0000, distill: 0.0030, learning_rate: 0.00000051, epoch_time: 1.000min
+Epoch:[1/1](6860/7076), loss: 0.6877, ce: 1.3719, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000051, epoch_time: 1.000min
+Epoch:[1/1](6880/7076), loss: 0.6978, ce: 1.3930, aux_loss: 0.0000, distill: 0.0025, learning_rate: 0.00000051, epoch_time: 1.000min
+Epoch:[1/1](6900/7076), loss: 0.6754, ce: 1.3473, aux_loss: 0.0000, distill: 0.0035, learning_rate: 0.00000051, epoch_time: 0.000min
+Epoch:[1/1](6920/7076), loss: 0.6634, ce: 1.3244, aux_loss: 0.0000, distill: 0.0025, learning_rate: 0.00000051, epoch_time: 0.000min
+Epoch:[1/1](6940/7076), loss: 0.7435, ce: 1.4837, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000050, epoch_time: 0.000min
+Epoch:[1/1](6960/7076), loss: 0.6755, ce: 1.3477, aux_loss: 0.0000, distill: 0.0032, learning_rate: 0.00000050, epoch_time: 0.000min
+Epoch:[1/1](6980/7076), loss: 0.6588, ce: 1.3150, aux_loss: 0.0000, distill: 0.0026, learning_rate: 0.00000050, epoch_time: 0.000min
+Epoch:[1/1](7000/7076), loss: 0.7062, ce: 1.4092, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000050, epoch_time: 0.000min
+Epoch:[1/1](7020/7076), loss: 0.7084, ce: 1.4141, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000050, epoch_time: 0.000min
+Epoch:[1/1](7040/7076), loss: 0.7009, ce: 1.3984, aux_loss: 0.0000, distill: 0.0033, learning_rate: 0.00000050, epoch_time: 0.000min
+Epoch:[1/1](7060/7076), loss: 0.7047, ce: 1.4065, aux_loss: 0.0000, distill: 0.0028, learning_rate: 0.00000050, epoch_time: 0.000min
+Epoch:[1/1](7076/7076), loss: 0.6432, ce: 1.2833, aux_loss: 0.0000, distill: 0.0031, learning_rate: 0.00000050, epoch_time: 0.000min
+swanlab: Experiment MiniMind-Distill-S768T768-Epoch-1-BS-32-LR-5e-06 has 
+completed
+swanlab:  ☁️ Run `swanlab sync 
+/home/jk/work/minimind/trainer/swanlog/run-20260928_000703-bdivuzzpqk51fpkh1dnmm
+` to sync logs to remote server

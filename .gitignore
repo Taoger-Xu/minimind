@@ -1,6 +1,10 @@
 __pycache__/
 *.pyc
+.venv/
 .DS_Store
 out
+checkpoints/
+dataset/*.jsonl
+trainer/swanlog/
 website/
 docs-minimind/

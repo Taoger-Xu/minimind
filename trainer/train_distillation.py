@@ -101,20 +101,28 @@ def train_epoch(epoch, loader, iters, teacher_model, lm_config_student, start_st
 
         if step % args.log_interval == 0 or step == iters:
             spend_time = time.time() - start_time
-            current_loss = loss.item() * args.accumulation_steps
-            current_ce_loss = ce_loss_raw.item()
-            current_aux_loss = res.aux_loss.item() if lm_config_student.use_moe else 0.0
+            aux_loss_for_log = res.aux_loss.detach().float() if lm_config_student.use_moe else torch.zeros((), device=args.device)
+            loss_metrics = torch.stack((
+                loss.detach().float() * args.accumulation_steps,
+                ce_loss_raw.detach().float(),
+                aux_loss_for_log,
+                distill_loss.detach().float(),
+            ))
+            if dist.is_initialized():
+                dist.all_reduce(loss_metrics, op=dist.ReduceOp.SUM)
+                loss_metrics /= dist.get_world_size()
+            current_loss, current_ce_loss, current_aux_loss, current_distill_loss = loss_metrics.tolist()
             current_lr = optimizer.param_groups[-1]['lr']
             eta_min = spend_time / max(step - start_step, 1) * (iters - step) // 60
             
-            Logger(f'Epoch:[{epoch + 1}/{args.epochs}]({step}/{iters}), loss: {current_loss:.4f}, ce: {current_ce_loss:.4f}, aux_loss: {current_aux_loss:.4f}, distill: {distill_loss.item():.4f}, learning_rate: {current_lr:.8f}, epoch_time: {eta_min:.3f}min')
+            Logger(f'Epoch:[{epoch + 1}/{args.epochs}]({step}/{iters}), loss: {current_loss:.4f}, ce: {current_ce_loss:.4f}, aux_loss: {current_aux_loss:.4f}, distill: {current_distill_loss:.4f}, learning_rate: {current_lr:.8f}, epoch_time: {eta_min:.3f}min')
             
             if wandb:
                 wandb.log({
                     "loss": current_loss,
                     "ce_loss": current_ce_loss,
                     "aux_loss": current_aux_loss,
-                    "distill_loss": distill_loss.item() if teacher_model is not None else 0.0,
+                    "distill_loss": current_distill_loss,
                     "learning_rate": current_lr,
                     "epoch_time": eta_min
                 })

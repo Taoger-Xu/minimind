@@ -48,9 +48,16 @@ def train_epoch(epoch, loader, iters, start_step=0, wandb=None):
 
         if step % args.log_interval == 0 or step == iters:
             spend_time = time.time() - start_time
-            current_loss = loss.item() * args.accumulation_steps
-            current_aux_loss = res.aux_loss.item() if res.aux_loss is not None else 0.0
-            current_logits_loss = current_loss - current_aux_loss
+            aux_loss_for_log = res.aux_loss.detach().float() if res.aux_loss is not None else torch.zeros((), device=args.device)
+            loss_metrics = torch.stack((
+                loss.detach().float() * args.accumulation_steps,
+                res.loss.detach().float(),
+                aux_loss_for_log,
+            ))
+            if dist.is_initialized():
+                dist.all_reduce(loss_metrics, op=dist.ReduceOp.SUM)
+                loss_metrics /= dist.get_world_size()
+            current_loss, current_logits_loss, current_aux_loss = loss_metrics.tolist()
             current_lr = optimizer.param_groups[-1]['lr']
             eta_min = spend_time / max(step - start_step, 1) * (iters - step) // 60
             Logger(f'Epoch:[{epoch + 1}/{args.epochs}]({step}/{iters}), loss: {current_loss:.4f}, logits_loss: {current_logits_loss:.4f}, aux_loss: {current_aux_loss:.4f}, lr: {current_lr:.8f}, epoch_time: {eta_min:.1f}min')

@@ -1,0 +1,135 @@
+W0928 00:56:13.953000 539208 torch/distributed/run.py:792] 
+W0928 00:56:13.953000 539208 torch/distributed/run.py:792] *****************************************
+W0928 00:56:13.953000 539208 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0928 00:56:13.953000 539208 torch/distributed/run.py:792] *****************************************
+swanlab: Tracking run with swanlab version 0.7.11
+swanlab: Run data will be saved locally in 
+/home/jk/work/minimind/trainer/swanlog/run-20260928_005619-bdivuzzpqk51fpkh1dnmm
+swanlab: Backing up run MiniMind-PPO-Epoch-1-BS-2-LR-3e-07 locally
+swanlab:  ☁️ Run `swanlab sync 
+/home/jk/work/minimind/trainer/swanlog/run-20260928_005619-bdivuzzpqk51fpkh1dnmm
+` to sync logs to remote server
+Model Params: 63.91M
+Trainable Params: 63.912M
+Model Params: 63.91M
+Trainable Params: 63.912M
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 81.43it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 81.73it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 81.72it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 87.71it/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 17206 examples [00:00, 118924.31 examples/s]Generating train split: 19502 examples [00:00, 120669.57 examples/s]
+past_key_values should not be None in from_legacy_cache()
+past_key_values should not be None in from_legacy_cache()
+past_key_values should not be None in from_legacy_cache()
+past_key_values should not be None in from_legacy_cache()
+Epoch:[1/1](10/2438), Reward: -1.5538, KL_ref: 0.0022, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.3183, Avg Response Len: 110.50, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](20/2438), Reward: -1.5839, KL_ref: 0.0008, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.4125, Avg Response Len: 102.00, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](30/2438), Reward: -1.3919, KL_ref: 0.0004, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.3306, Avg Response Len: 78.25, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](40/2438), Reward: -1.5588, KL_ref: 0.0009, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.3848, Avg Response Len: 117.12, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](50/2438), Reward: -0.8774, KL_ref: 0.0009, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2573, Avg Response Len: 75.25, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](60/2438), Reward: -2.1736, KL_ref: 0.0002, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.4027, Avg Response Len: 85.25, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](70/2438), Reward: -1.4059, KL_ref: 0.0009, Approx KL: 0.0002, ClipFrac: 0.0008, Critic Loss: 0.3794, Avg Response Len: 70.12, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](80/2438), Reward: -0.9613, KL_ref: 0.0020, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2885, Avg Response Len: 97.38, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](90/2438), Reward: -1.4391, KL_ref: 0.0009, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.3467, Avg Response Len: 109.75, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](100/2438), Reward: -1.8552, KL_ref: 0.0008, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2952, Avg Response Len: 95.00, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](110/2438), Reward: -1.4879, KL_ref: 0.0010, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2429, Avg Response Len: 97.75, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](120/2438), Reward: -1.5419, KL_ref: 0.0009, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.3128, Avg Response Len: 113.50, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](130/2438), Reward: -0.9552, KL_ref: 0.0018, Approx KL: 0.0002, ClipFrac: 0.0018, Critic Loss: 0.1750, Avg Response Len: 93.25, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](140/2438), Reward: -1.2561, KL_ref: 0.0024, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2417, Avg Response Len: 103.62, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](150/2438), Reward: -1.2877, KL_ref: 0.0013, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.3572, Avg Response Len: 84.62, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](160/2438), Reward: -1.5758, KL_ref: 0.0018, Approx KL: 0.0001, ClipFrac: 0.0009, Critic Loss: 0.2686, Avg Response Len: 84.62, Actor LR: 0.00000030, Critic LR: 0.00000050
+Epoch:[1/1](170/2438), Reward: -1.5820, KL_ref: 0.0019, Approx KL: 0.0002, ClipFrac: 0.0005, Critic Loss: 0.2764, Avg Response Len: 99.75, Actor LR: 0.00000030, Critic LR: 0.00000049
+Epoch:[1/1](180/2438), Reward: -1.1946, KL_ref: 0.0014, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2928, Avg Response Len: 115.00, Actor LR: 0.00000030, Critic LR: 0.00000049
+Epoch:[1/1](190/2438), Reward: -1.4223, KL_ref: 0.0020, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2720, Avg Response Len: 106.62, Actor LR: 0.00000030, Critic LR: 0.00000049
+Epoch:[1/1](200/2438), Reward: -1.4025, KL_ref: 0.0006, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2798, Avg Response Len: 111.75, Actor LR: 0.00000030, Critic LR: 0.00000049
+Epoch:[1/1](210/2438), Reward: -1.0479, KL_ref: 0.0014, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2408, Avg Response Len: 95.25, Actor LR: 0.00000030, Critic LR: 0.00000049
+Epoch:[1/1](220/2438), Reward: -1.5149, KL_ref: 0.0008, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2626, Avg Response Len: 94.75, Actor LR: 0.00000029, Critic LR: 0.00000049
+Epoch:[1/1](230/2438), Reward: -1.0212, KL_ref: 0.0019, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1917, Avg Response Len: 114.75, Actor LR: 0.00000029, Critic LR: 0.00000049
+Epoch:[1/1](240/2438), Reward: -1.5930, KL_ref: 0.0015, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.1988, Avg Response Len: 123.88, Actor LR: 0.00000029, Critic LR: 0.00000049
+Epoch:[1/1](250/2438), Reward: -1.6144, KL_ref: 0.0017, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2533, Avg Response Len: 98.25, Actor LR: 0.00000029, Critic LR: 0.00000049
+Epoch:[1/1](260/2438), Reward: -1.6069, KL_ref: 0.0023, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2568, Avg Response Len: 107.00, Actor LR: 0.00000029, Critic LR: 0.00000049
+Epoch:[1/1](270/2438), Reward: -1.6143, KL_ref: 0.0012, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.3727, Avg Response Len: 67.62, Actor LR: 0.00000029, Critic LR: 0.00000049
+Epoch:[1/1](280/2438), Reward: -1.1628, KL_ref: 0.0021, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2495, Avg Response Len: 107.00, Actor LR: 0.00000029, Critic LR: 0.00000049
+Epoch:[1/1](290/2438), Reward: -1.1175, KL_ref: 0.0016, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2066, Avg Response Len: 102.62, Actor LR: 0.00000029, Critic LR: 0.00000048
+Epoch:[1/1](300/2438), Reward: -1.3535, KL_ref: 0.0012, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.3392, Avg Response Len: 70.00, Actor LR: 0.00000029, Critic LR: 0.00000048
+Epoch:[1/1](310/2438), Reward: -1.6443, KL_ref: 0.0030, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.3096, Avg Response Len: 66.75, Actor LR: 0.00000029, Critic LR: 0.00000048
+Epoch:[1/1](320/2438), Reward: -1.8945, KL_ref: 0.0005, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2410, Avg Response Len: 124.88, Actor LR: 0.00000029, Critic LR: 0.00000048
+Epoch:[1/1](330/2438), Reward: -1.2366, KL_ref: 0.0020, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2168, Avg Response Len: 102.25, Actor LR: 0.00000029, Critic LR: 0.00000048
+Epoch:[1/1](340/2438), Reward: -1.3251, KL_ref: 0.0014, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2198, Avg Response Len: 89.75, Actor LR: 0.00000029, Critic LR: 0.00000048
+Epoch:[1/1](350/2438), Reward: -1.2521, KL_ref: 0.0025, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2048, Avg Response Len: 101.38, Actor LR: 0.00000029, Critic LR: 0.00000048
+Epoch:[1/1](360/2438), Reward: -1.8130, KL_ref: 0.0013, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2123, Avg Response Len: 122.88, Actor LR: 0.00000029, Critic LR: 0.00000048
+Epoch:[1/1](370/2438), Reward: -1.4582, KL_ref: 0.0014, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2571, Avg Response Len: 78.62, Actor LR: 0.00000028, Critic LR: 0.00000047
+Epoch:[1/1](380/2438), Reward: -1.4764, KL_ref: 0.0020, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1950, Avg Response Len: 102.75, Actor LR: 0.00000028, Critic LR: 0.00000047
+Epoch:[1/1](390/2438), Reward: -1.7541, KL_ref: 0.0015, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2390, Avg Response Len: 78.25, Actor LR: 0.00000028, Critic LR: 0.00000047
+Epoch:[1/1](400/2438), Reward: -0.8578, KL_ref: 0.0019, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1799, Avg Response Len: 85.50, Actor LR: 0.00000028, Critic LR: 0.00000047
+Epoch:[1/1](410/2438), Reward: -1.7580, KL_ref: 0.0006, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2056, Avg Response Len: 113.38, Actor LR: 0.00000028, Critic LR: 0.00000047
+Epoch:[1/1](420/2438), Reward: -1.4393, KL_ref: 0.0015, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2078, Avg Response Len: 97.75, Actor LR: 0.00000028, Critic LR: 0.00000047
+Epoch:[1/1](430/2438), Reward: -0.7197, KL_ref: 0.0011, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2640, Avg Response Len: 60.88, Actor LR: 0.00000028, Critic LR: 0.00000047
+Epoch:[1/1](440/2438), Reward: -1.5265, KL_ref: 0.0010, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2236, Avg Response Len: 106.25, Actor LR: 0.00000028, Critic LR: 0.00000046
+Epoch:[1/1](450/2438), Reward: -1.6155, KL_ref: 0.0028, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2291, Avg Response Len: 98.12, Actor LR: 0.00000028, Critic LR: 0.00000046
+Epoch:[1/1](460/2438), Reward: -1.6190, KL_ref: 0.0023, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1980, Avg Response Len: 103.50, Actor LR: 0.00000028, Critic LR: 0.00000046
+Epoch:[1/1](470/2438), Reward: -1.8738, KL_ref: 0.0018, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2086, Avg Response Len: 78.12, Actor LR: 0.00000028, Critic LR: 0.00000046
+Epoch:[1/1](480/2438), Reward: -1.3131, KL_ref: 0.0010, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2027, Avg Response Len: 113.62, Actor LR: 0.00000027, Critic LR: 0.00000046
+Epoch:[1/1](490/2438), Reward: -1.2464, KL_ref: 0.0020, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2255, Avg Response Len: 101.00, Actor LR: 0.00000027, Critic LR: 0.00000046
+Epoch:[1/1](500/2438), Reward: -1.1058, KL_ref: 0.0011, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2298, Avg Response Len: 104.38, Actor LR: 0.00000027, Critic LR: 0.00000045
+Epoch:[1/1](510/2438), Reward: -1.6547, KL_ref: 0.0015, Approx KL: 0.0001, ClipFrac: 0.0005, Critic Loss: 0.2004, Avg Response Len: 93.50, Actor LR: 0.00000027, Critic LR: 0.00000045
+Epoch:[1/1](520/2438), Reward: -0.6518, KL_ref: 0.0021, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2049, Avg Response Len: 102.38, Actor LR: 0.00000027, Critic LR: 0.00000045
+Epoch:[1/1](530/2438), Reward: -1.4285, KL_ref: 0.0011, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2235, Avg Response Len: 89.12, Actor LR: 0.00000027, Critic LR: 0.00000045
+Epoch:[1/1](540/2438), Reward: -1.3383, KL_ref: 0.0016, Approx KL: 0.0002, ClipFrac: 0.0005, Critic Loss: 0.1986, Avg Response Len: 92.62, Actor LR: 0.00000027, Critic LR: 0.00000045
+Epoch:[1/1](550/2438), Reward: -1.8185, KL_ref: 0.0033, Approx KL: 0.0002, ClipFrac: 0.0005, Critic Loss: 0.1655, Avg Response Len: 121.00, Actor LR: 0.00000027, Critic LR: 0.00000045
+Epoch:[1/1](560/2438), Reward: -1.4609, KL_ref: 0.0021, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2022, Avg Response Len: 71.75, Actor LR: 0.00000027, Critic LR: 0.00000044
+Epoch:[1/1](570/2438), Reward: -1.5485, KL_ref: 0.0017, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.1760, Avg Response Len: 109.88, Actor LR: 0.00000027, Critic LR: 0.00000044
+Epoch:[1/1](580/2438), Reward: -0.9001, KL_ref: 0.0022, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2079, Avg Response Len: 73.25, Actor LR: 0.00000026, Critic LR: 0.00000044
+Epoch:[1/1](590/2438), Reward: -1.1556, KL_ref: 0.0020, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.1807, Avg Response Len: 92.75, Actor LR: 0.00000026, Critic LR: 0.00000044
+Epoch:[1/1](600/2438), Reward: -1.3909, KL_ref: 0.0021, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.1724, Avg Response Len: 100.50, Actor LR: 0.00000026, Critic LR: 0.00000044
+Epoch:[1/1](610/2438), Reward: -1.4464, KL_ref: 0.0030, Approx KL: 0.0002, ClipFrac: 0.0005, Critic Loss: 0.1756, Avg Response Len: 115.88, Actor LR: 0.00000026, Critic LR: 0.00000043
+Epoch:[1/1](620/2438), Reward: -1.5703, KL_ref: 0.0026, Approx KL: 0.0002, ClipFrac: 0.0005, Critic Loss: 0.1873, Avg Response Len: 101.62, Actor LR: 0.00000026, Critic LR: 0.00000043
+Epoch:[1/1](630/2438), Reward: -1.6139, KL_ref: 0.0013, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.1687, Avg Response Len: 125.12, Actor LR: 0.00000026, Critic LR: 0.00000043
+Epoch:[1/1](640/2438), Reward: -1.5516, KL_ref: 0.0026, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1702, Avg Response Len: 122.38, Actor LR: 0.00000026, Critic LR: 0.00000043
+Epoch:[1/1](650/2438), Reward: -0.9621, KL_ref: 0.0019, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2328, Avg Response Len: 106.25, Actor LR: 0.00000026, Critic LR: 0.00000043
+Epoch:[1/1](660/2438), Reward: -1.7368, KL_ref: 0.0022, Approx KL: 0.0002, ClipFrac: 0.0005, Critic Loss: 0.2009, Avg Response Len: 96.62, Actor LR: 0.00000025, Critic LR: 0.00000042
+Epoch:[1/1](670/2438), Reward: -0.9892, KL_ref: 0.0030, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.2102, Avg Response Len: 94.00, Actor LR: 0.00000025, Critic LR: 0.00000042
+Epoch:[1/1](680/2438), Reward: -1.8098, KL_ref: 0.0010, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1700, Avg Response Len: 102.50, Actor LR: 0.00000025, Critic LR: 0.00000042
+Epoch:[1/1](690/2438), Reward: -1.5363, KL_ref: 0.0017, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1840, Avg Response Len: 93.62, Actor LR: 0.00000025, Critic LR: 0.00000042
+Epoch:[1/1](700/2438), Reward: -0.7462, KL_ref: 0.0031, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1591, Avg Response Len: 100.38, Actor LR: 0.00000025, Critic LR: 0.00000041
+Epoch:[1/1](710/2438), Reward: -1.7600, KL_ref: 0.0014, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.1928, Avg Response Len: 119.12, Actor LR: 0.00000025, Critic LR: 0.00000041
+Epoch:[1/1](720/2438), Reward: -1.4454, KL_ref: 0.0015, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2113, Avg Response Len: 83.88, Actor LR: 0.00000025, Critic LR: 0.00000041
+Epoch:[1/1](730/2438), Reward: -1.2706, KL_ref: 0.0028, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1923, Avg Response Len: 88.00, Actor LR: 0.00000024, Critic LR: 0.00000041
+Epoch:[1/1](740/2438), Reward: -1.5552, KL_ref: 0.0015, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.1687, Avg Response Len: 102.62, Actor LR: 0.00000024, Critic LR: 0.00000041
+Epoch:[1/1](750/2438), Reward: -1.0432, KL_ref: 0.0021, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1489, Avg Response Len: 100.88, Actor LR: 0.00000024, Critic LR: 0.00000040
+Epoch:[1/1](760/2438), Reward: -1.4878, KL_ref: 0.0015, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2140, Avg Response Len: 98.38, Actor LR: 0.00000024, Critic LR: 0.00000040
+Epoch:[1/1](770/2438), Reward: -1.7621, KL_ref: 0.0016, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.1919, Avg Response Len: 98.50, Actor LR: 0.00000024, Critic LR: 0.00000040
+Epoch:[1/1](780/2438), Reward: -1.1941, KL_ref: 0.0057, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1403, Avg Response Len: 85.62, Actor LR: 0.00000024, Critic LR: 0.00000040
+Epoch:[1/1](790/2438), Reward: -1.2834, KL_ref: 0.0023, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1830, Avg Response Len: 84.38, Actor LR: 0.00000024, Critic LR: 0.00000039
+Epoch:[1/1](800/2438), Reward: -1.9544, KL_ref: 0.0034, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1639, Avg Response Len: 110.75, Actor LR: 0.00000023, Critic LR: 0.00000039
+Epoch:[1/1](810/2438), Reward: -1.3430, KL_ref: 0.0027, Approx KL: 0.0002, ClipFrac: 0.0005, Critic Loss: 0.1671, Avg Response Len: 94.50, Actor LR: 0.00000023, Critic LR: 0.00000039
+Epoch:[1/1](820/2438), Reward: -1.5799, KL_ref: 0.0019, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1723, Avg Response Len: 94.62, Actor LR: 0.00000023, Critic LR: 0.00000039
+Epoch:[1/1](830/2438), Reward: -1.1742, KL_ref: 0.0018, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1679, Avg Response Len: 118.38, Actor LR: 0.00000023, Critic LR: 0.00000038
+Epoch:[1/1](840/2438), Reward: -1.4651, KL_ref: 0.0035, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1698, Avg Response Len: 102.38, Actor LR: 0.00000023, Critic LR: 0.00000038
+Epoch:[1/1](850/2438), Reward: -1.5766, KL_ref: 0.0021, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1646, Avg Response Len: 107.62, Actor LR: 0.00000023, Critic LR: 0.00000038
+Epoch:[1/1](860/2438), Reward: -1.3393, KL_ref: 0.0018, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1549, Avg Response Len: 110.50, Actor LR: 0.00000023, Critic LR: 0.00000038
+Epoch:[1/1](870/2438), Reward: -1.8283, KL_ref: 0.0016, Approx KL: 0.0002, ClipFrac: 0.0005, Critic Loss: 0.1518, Avg Response Len: 118.38, Actor LR: 0.00000022, Critic LR: 0.00000037
+Epoch:[1/1](880/2438), Reward: -1.4477, KL_ref: 0.0029, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.1766, Avg Response Len: 90.00, Actor LR: 0.00000022, Critic LR: 0.00000037
+Epoch:[1/1](890/2438), Reward: -1.4223, KL_ref: 0.0014, Approx KL: 0.0002, ClipFrac: 0.0007, Critic Loss: 0.1500, Avg Response Len: 86.12, Actor LR: 0.00000022, Critic LR: 0.00000037
+Epoch:[1/1](900/2438), Reward: -1.4569, KL_ref: 0.0016, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1839, Avg Response Len: 123.75, Actor LR: 0.00000022, Critic LR: 0.00000036
+Epoch:[1/1](910/2438), Reward: -1.1537, KL_ref: 0.0010, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2215, Avg Response Len: 107.12, Actor LR: 0.00000022, Critic LR: 0.00000036
+Epoch:[1/1](920/2438), Reward: -1.4676, KL_ref: 0.0013, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1749, Avg Response Len: 114.62, Actor LR: 0.00000022, Critic LR: 0.00000036
+Epoch:[1/1](930/2438), Reward: -0.9795, KL_ref: 0.0021, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1722, Avg Response Len: 118.00, Actor LR: 0.00000021, Critic LR: 0.00000036
+Epoch:[1/1](940/2438), Reward: -1.4120, KL_ref: 0.0012, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1614, Avg Response Len: 120.00, Actor LR: 0.00000021, Critic LR: 0.00000035
+Epoch:[1/1](950/2438), Reward: -1.2414, KL_ref: 0.0011, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.1739, Avg Response Len: 111.00, Actor LR: 0.00000021, Critic LR: 0.00000035
+Epoch:[1/1](960/2438), Reward: -1.3874, KL_ref: 0.0009, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2012, Avg Response Len: 105.50, Actor LR: 0.00000021, Critic LR: 0.00000035
+Epoch:[1/1](970/2438), Reward: -1.3208, KL_ref: 0.0009, Approx KL: 0.0002, ClipFrac: 0.0005, Critic Loss: 0.1632, Avg Response Len: 117.88, Actor LR: 0.00000021, Critic LR: 0.00000035
+Epoch:[1/1](980/2438), Reward: -1.4707, KL_ref: 0.0042, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1417, Avg Response Len: 110.25, Actor LR: 0.00000021, Critic LR: 0.00000034
+Epoch:[1/1](990/2438), Reward: -1.3751, KL_ref: 0.0020, Approx KL: 0.0001, ClipFrac: 0.0005, Critic Loss: 0.1334, Avg Response Len: 115.38, Actor LR: 0.00000020, Critic LR: 0.00000034
+Epoch:[1/1](1000/2438), Reward: -1.5352, KL_ref: 0.0030, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.1490, Avg Response Len: 98.50, Actor LR: 0.00000020, Critic LR: 0.00000034
+Epoch:[1/1](1010/2438), Reward: -1.1815, KL_ref: 0.0068, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1537, Avg Response Len: 113.38, Actor LR: 0.00000020, Critic LR: 0.00000033
+Epoch:[1/1](1020/2438), Reward: -2.3332, KL_ref: 0.0024, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.2051, Avg Response Len: 107.00, Actor LR: 0.00000020, Critic LR: 0.00000033
+Epoch:[1/1](1030/2438), Reward: -1.1694, KL_ref: 0.0032, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1617, Avg Response Len: 99.25, Actor LR: 0.00000020, Critic LR: 0.00000033
+Epoch:[1/1](1040/2438), Reward: -1.6729, KL_ref: 0.0026, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.1464, Avg Response Len: 113.38, Actor LR: 0.00000020, Critic LR: 0.00000033
+Epoch:[1/1](1050/2438), Reward: -1.0153, KL_ref: 0.0027, Approx KL: 0.0002, ClipFrac: 0.0006, Critic Loss: 0.1902, Avg Response Len: 82.75, Actor LR: 0.00000019, Critic LR: 0.00000032
+Epoch:[1/1](1060/2438), Reward: -0.8355, KL_ref: 0.0018, Approx KL: 0.0001, ClipFrac: 0.0000, Critic Loss: 0.1705, Avg Response Len: 97.00, Actor LR: 0.00000019, Critic LR: 0.00000032
+Epoch:[1/1](1070/2438), Reward: -1.4943, KL_ref: 0.0030, Approx KL: 0.0002, ClipFrac: 0.0000, Critic Loss: 0.1412, Avg Response Len: 112.25, Actor LR: 0.00000019, Critic LR: 0.00000032

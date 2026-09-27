@@ -93,9 +93,15 @@ def train_epoch(epoch, loader, iters, ref_model, lm_config, start_step=0, wandb=
 
         if step % args.log_interval == 0 or step == iters:
             spend_time = time.time() - start_time
-            current_loss = loss.item() * args.accumulation_steps
-            current_dpo_loss = dpo_loss_val.item()
-            current_aux_loss = outputs.aux_loss.item()
+            loss_metrics = torch.stack((
+                loss.detach().float() * args.accumulation_steps,
+                dpo_loss_val.detach().float(),
+                outputs.aux_loss.detach().float(),
+            ))
+            if dist.is_initialized():
+                dist.all_reduce(loss_metrics, op=dist.ReduceOp.SUM)
+                loss_metrics /= dist.get_world_size()
+            current_loss, current_dpo_loss, current_aux_loss = loss_metrics.tolist()
             current_lr = optimizer.param_groups[-1]['lr']
             eta_min = spend_time / max(step - start_step, 1) * (iters - step) // 60
             

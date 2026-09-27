@@ -255,13 +255,21 @@ def ppo_train_epoch(epoch, loader, iters, rollout_engine, ref_model, actor_sched
         
         if step % args.save_interval == 0 or step == iters: rollout_engine.update_policy(actor_model)
 
-        if is_main_process():
-            critic_loss_val = value_loss_sum / max(log_count, 1)
-            reward_val = rewards.mean().item()
-            approx_kl_val = kl_sum / max(log_count, 1)
-            kl_ref_val = kl_ref_sum / max(log_count, 1)
-            clipfrac_val = clipfrac_sum / max(log_count, 1)
-            avg_len_val = resp_lengths.float().mean().item()
+        if step % args.log_interval == 0 or step == iters:
+            metrics = torch.tensor([
+                rewards.mean().item(),
+                kl_sum / max(log_count, 1),
+                kl_ref_sum / max(log_count, 1),
+                clipfrac_sum / max(log_count, 1),
+                value_loss_sum / max(log_count, 1),
+                resp_lengths.float().mean().item(),
+            ], device=args.device, dtype=torch.float32)
+            if dist.is_initialized():
+                dist.all_reduce(metrics, op=dist.ReduceOp.SUM)
+                metrics /= dist.get_world_size()
+            reward_val, approx_kl_val, kl_ref_val, clipfrac_val, critic_loss_val, avg_len_val = metrics.tolist()
+
+        if (step % args.log_interval == 0 or step == iters) and is_main_process():
             actor_lr, critic_lr = actor_optimizer.param_groups[0]['lr'], critic_optimizer.param_groups[0]['lr']
 
             if wandb is not None:
